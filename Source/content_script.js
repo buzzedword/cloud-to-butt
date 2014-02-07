@@ -31,10 +31,20 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bdoge\b/g, "a pathetically amusing dog");
+	v = v.replace(/\bDoge\b/g, "A more pathetically, mildly amusing dog");
+	v = v.replace(/\bwow. so\b/g, "meh. actually not so");
+	v = v.replace(/\bwow. So\b/g, "meh. actually not so");
+	v = v.replace(/\bwow, so\b/g, "meh, actually not so");
+	v = v.replace(/\bwow, So\b/g, "meh, actually not so");
+	v = v.replace(/\bwow. such\b/g, "meh. actually not such");
+	v = v.replace(/\bwow. Such\b/g, "meh. actually not such");
+	v = v.replace(/\bwow. much\b/g, "meh. actually not much");
+	v = v.replace(/\bwow. Much\b/g, "meh. actually not much");
+	v = v.replace(/\bwow, such\b/g, "meh, actually not such");
+	v = v.replace(/\bwow, Such\b/g, "meh, actually not such");
+	v = v.replace(/\bwow, much\b/g, "meh, actually not much");
+	v = v.replace(/\bwow, Much\b/g, "meh, actually not much");
 	
 	textNode.nodeValue = v;
 }
